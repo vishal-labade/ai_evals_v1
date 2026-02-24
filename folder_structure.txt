@@ -1,0 +1,126 @@
+.
+├── configs
+│   ├── base.yaml
+│   ├── dev_rog.yaml
+│   └── run_config.yaml
+├── data
+│   └── prompts
+│       ├── generator_config.yaml
+│       ├── qc
+│       │   ├── distribution.csv
+│       │   ├── duplicates.json
+│       │   └── qc_summary.json
+│       ├── schemas
+│       │   ├── entity_metrics_v1.schema.json
+│       │   ├── entity_one_field_v1.schema.json
+│       │   ├── entity_three_field_v1.schema.json
+│       │   ├── entity_total_revenue_v1.schema.json
+│       │   ├── index.json
+│       │   ├── kv_entity_date_metric_v1.json
+│       │   ├── kv_entity_metric_v1.schema.json
+│       │   ├── ops_one_field_v1.schema.json
+│       │   ├── ops_three_field_v1.schema.json
+│       │   ├── product_exposure_v1.schema.json
+│       │   ├── product_three_field_v1.schema.json
+│       │   └── week_one_field_v1.schema.json
+│       ├── v1_suite_120.jsonl
+│       ├── v1_suite_120.manifest.json
+│       ├── v1_suite_big.jsonl
+│       ├── v1_suite_big.manifest.json
+│       ├── v1_suite_exp.jsonl
+│       ├── v1_suite_exp.manifest.json
+│       └── v1_suite.jsonl
+├── docs
+│   ├── CHANGE_LOG.md
+│   ├── DATA_CONTRACT.md
+│   ├── METHODOLOGY.md
+│   ├── ollama_instructions.md
+│   ├── REPRODUCIBILITY.md
+│   ├── ROAD_MAP.md
+│   ├── RUNBOOK.md
+│   ├── run_ollama_model.md
+│   └── SCORING.md
+├── expand
+│   ├── io.py
+│   ├── numeric_specs.yaml
+│   ├── paraphrases.yaml
+│   ├── registry.py
+│   ├── schema.py
+│   └── transforms
+│       ├── numeric.py
+│       └── paraphrases.py
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── results
+│   ├── leaderboards
+│   │   ├── rog_smoke_ci_20260223.csv
+│   │   └── rog_smoke_ci_20260223.md
+│   ├── metrics
+│   │   ├── dev_rog_smoke_20260223_044205_phi_mini_phi3-mini_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_044532_phi_mini_t0_phi3-mini_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_044903_qwen_3b_qwen2.5-3b_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_045222_qwen_3b_t0_qwen2.5-3b_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_045616_gemma_9b_t0_gemma2-9b-instruct-q4_K_M_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_050339_gemma_9b_gemma2-9b-instruct-q4_K_M_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_051100_llama_8b_t0_llama3-8b-instruct-q4_0_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_051559_llama_8b_llama3-8b-instruct-q4_0_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_062046_qwen_14b_t0_qwen2.5-14b_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_062830_qwen_14b_qwen2.5-14b_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_063609_mistral_12b_t0_mistral-nemo-12b-instruct-2407-q4_K_M_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_064325_mistral_12b_mistral-nemo-12b-instruct-2407-q4_K_M_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_071034_gpt_20b_t0_gpt-oss-safeguard-20b_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_073502_gpt_20b_gpt-oss-safeguard-20b_821e39941154.csv
+│   │   ├── dev_rog_smoke_20260223_190912_mixtral_moe_7b_t0_mixtral-8x7b_8534280de481.csv
+│   │   └── dev_rog_smoke_20260223_201421_mixtral_moe_7b_mixtral-8x7b_8534280de481.csv
+│   ├── reports
+│   │   ├── dev_rog_smoke_20260223_044205_phi_mini_phi3-mini_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_044532_phi_mini_t0_phi3-mini_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_044903_qwen_3b_qwen2.5-3b_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_045222_qwen_3b_t0_qwen2.5-3b_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_045616_gemma_9b_t0_gemma2-9b-instruct-q4_K_M_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_050339_gemma_9b_gemma2-9b-instruct-q4_K_M_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_051100_llama_8b_t0_llama3-8b-instruct-q4_0_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_051559_llama_8b_llama3-8b-instruct-q4_0_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_062046_qwen_14b_t0_qwen2.5-14b_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_062830_qwen_14b_qwen2.5-14b_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_063609_mistral_12b_t0_mistral-nemo-12b-instruct-2407-q4_K_M_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_064325_mistral_12b_mistral-nemo-12b-instruct-2407-q4_K_M_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_071034_gpt_20b_t0_gpt-oss-safeguard-20b_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_073502_gpt_20b_gpt-oss-safeguard-20b_821e39941154.md
+│   │   ├── dev_rog_smoke_20260223_190912_mixtral_moe_7b_t0_mixtral-8x7b_8534280de481.md
+│   │   ├── dev_rog_smoke_20260223_201421_mixtral_moe_7b_mixtral-8x7b_8534280de481.md
+│   │   └── leaderboard_by_setting.md
+│   └── runs
+│       ├── dev_rog_smoke_20260223_044205_phi_mini_phi3-mini_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_044532_phi_mini_t0_phi3-mini_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_044903_qwen_3b_qwen2.5-3b_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_045222_qwen_3b_t0_qwen2.5-3b_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_045616_gemma_9b_t0_gemma2-9b-instruct-q4_K_M_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_050339_gemma_9b_gemma2-9b-instruct-q4_K_M_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_051100_llama_8b_t0_llama3-8b-instruct-q4_0_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_051559_llama_8b_llama3-8b-instruct-q4_0_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_062046_qwen_14b_t0_qwen2.5-14b_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_062830_qwen_14b_qwen2.5-14b_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_063609_mistral_12b_t0_mistral-nemo-12b-instruct-2407-q4_K_M_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_064325_mistral_12b_mistral-nemo-12b-instruct-2407-q4_K_M_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_071034_gpt_20b_t0_gpt-oss-safeguard-20b_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_073502_gpt_20b_gpt-oss-safeguard-20b_821e39941154.jsonl
+│       ├── dev_rog_smoke_20260223_190912_mixtral_moe_7b_t0_mixtral-8x7b_8534280de481.jsonl
+│       └── dev_rog_smoke_20260223_201421_mixtral_moe_7b_mixtral-8x7b_8534280de481.jsonl
+└── scripts
+    ├── add_confidence_intervals.py
+    ├── compare_runs.py
+    ├── expand_suite_v1.py
+    ├── failure_breakdown.py
+    ├── make_leaderboard_grouped.py
+    ├── make_leaderboard.py
+    ├── make_report_all_runs.py
+    ├── make_report.py
+    ├── run_model_ollama.py
+    ├── run_models.py
+    ├── score_all_runs.py
+    ├── score_run.py
+    └── verify_ollama.py
+
+14 directories, 109 files
