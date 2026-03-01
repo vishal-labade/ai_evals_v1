@@ -1,9 +1,3 @@
-
----
-
-## `docs/ROADMAP.md` (drop-in)
-
-```md
 # Roadmap
 
 ## V1 (v1_final) — complete

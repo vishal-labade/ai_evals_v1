@@ -1,9 +1,3 @@
-
----
-
-## `docs/METHODOLOGY.md` (drop-in)
-
-```md
 # Methodology (V1 / v1_final)
 
 This document explains what V1 measures, how the suite is constructed, and how metrics are computed.
